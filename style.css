@@ -1,0 +1,138 @@
+/* Apply a professional background with an image and gradient overlay */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/login1.avif');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #190be6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the main container */
+.container {
+    width: 400px;
+    background: rgba(10, 55, 233, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    border: 5px solid #0033cc;  /* Thick Blue Border */
+    box-shadow: 0px 8px 20px rgba(0, 0, 255, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect to give a slight floating animation */
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0, 0, 255, 0.7);
+}
+
+/* Input section with better spacing */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input styling with focus effect */
+input {
+    flex: 1;
+    padding: 12px;
+    border: 3px solid #0033cc;  /* Blue Thick Border */
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Focus effect for input field */
+input:focus {
+    box-shadow: 0px 0px 12px rgba(0, 0, 255, 0.8);
+    border: 3px solid #190be6;
+}
+
+/* Button styling with animations */
+button {
+    background: #007bff;
+    color: white;
+    border: 3px solid #0033cc; /* Thick Blue Border */
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease, border 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #5507e7;
+    transform: scale(1.07);
+    border: 3px solid #5507e7;
+}
+
+/* To-Do list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Individual list items with fade-in animation */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(80, 5, 240, 0.3);
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 3px solid #0033cc;  /* Blue Thick Border */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background: red;
+    color: white;
+    border: 3px solid darkred;  /* Red Thick Border */
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease, border 0.3s ease;
+}
+
+/* Delete button hover effect */
+.delete-btn:hover {
+    background: darkred;
+    transform: scale(1.1);
+    border: 3px solid black;
+}
+
+/* Clear All Button Styling */
+#clearAll {
+    background: #dc3545;
+    border: 3px solid #8b0000;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Hover effect for Clear All */
+#clearAll:hover {
+    background: #8b0000;
+    border: 3px solid black;
+}
+
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
